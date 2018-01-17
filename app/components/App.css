@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+*{
+  margin: 0;
+  pading: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#uploads{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282B28;
+}
+
+#timeline{
+  background-color: transparent;
+  width: 60%;
+  height: 70vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+input[type=file]{
+  display: none;
+}
+
+#btn-upload{
+  background-color: #3498db;
+  color: #ecf0f1;
+  font-size: 17;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-radius: 3.5px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif !important;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#timeline-images{
+  margin-top: 25px;
+  height: 45vh;
+  width: 95%;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+
+#timeline-images::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#timeline-images::-webkit-scrollbar{
+	width: 12px;
+	background-color: #34495e;
+}
+
+#timeline-images::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #34495e;
+}
+
+#timeline-images>img{
+  width: calc(100%/4);
+  height: 17vh;
+  border-radius: 5px;
+  margin: 20px;
+}
