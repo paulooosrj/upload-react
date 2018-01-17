@@ -13,6 +13,18 @@ Third, install the dependencies.
 $ npm install
 ```
 
+Config cloudinary
+- Create account free [Cloudinary](https://cloudinary.com/signup).
+
+*Change file:* **server/http.js**
+```javascript
+  cloudinary.config({ 
+      cloud_name: 'CLOUD CONFIG NAME', 
+      api_key: 'CLOUD CONFIG KEY', 
+      api_secret: 'CLOUD CONFIG SECRET' 
+  });
+```
+
 Next, launch the app.
 
 ```bash
