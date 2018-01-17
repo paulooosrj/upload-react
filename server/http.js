@@ -17,9 +17,9 @@ app.post('/api', function(req, res){
   upload(req, res, function(err){
     if(err){ return res.end("Error")};
     cloudinary.config({ 
-      cloud_name: 'dhyeodezi', 
-      api_key: '666499439438643', 
-      api_secret: 'HZj-6uXOddDyvPkDyLAzxzmeOlI' 
+      cloud_name: 'CLOUD CONFIG NAME', 
+      api_key: 'CLOUD CONFIG KEY', 
+      api_secret: 'CLOUD CONFIG SECRET' 
     });
     cloudinary.uploader.upload(req.file.path, function(result) { 
       if (result.url) {
