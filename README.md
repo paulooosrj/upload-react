@@ -1,5 +1,7 @@
 ## How to use
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/PaulaoDev/upload-react.svg)](https://greenkeeper.io/)
+
 First, clone the repo.
 
 ```bash
